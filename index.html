@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Guessing Game
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  
+  
+  <body>
+    <div id="container">   
+      <div id="header">
+        <h1>Guessing Game</h1>
+        <h3>Joao Paulo Ramia</h4>
+      </div>
+    
+      <div id="body">
+        <h2>PICK A NUMBER BETWEEN 0 AND 100:</h2>
+        
+        <form onSubmit="check(); hotOrCold(); return false;">
+          <input type="text" name="nm" placeholder="Choose 0...100" id="userGuess">
+          <input type="button" value="Submit number" onClick="check(); hotOrCold();">
+          <br>
+          <br>
+          <input type="button" value="Give me a hint!" onClick="hint();">
+        </form>       
+        <h3 id="hotOrCold"> </h3>
+        <h4 id="result">Try it!</h4>
+      
+      </div>
+      
+      <div id="footer">
+        <h5>Guessing Game - Joao Paulo</h5>
+      </div>
+    </div>
+  </body>
+</html>

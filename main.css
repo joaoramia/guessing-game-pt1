@@ -1,0 +1,47 @@
+#header {
+  text-align: center;
+  background-color: white;
+  color: gray;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: "Courier New";
+}
+
+#container {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("http://i.imgur.com/TEsCaYq.jpg");
+  background-size: cover;
+  min-height:100%;
+  position:relative;
+}
+
+#header {
+  padding:5px;
+}
+
+form {
+
+  border-radius: 8px;
+}
+
+#body {
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+  color: white;
+  text-align: center;
+  font-size: 200%;
+}
+
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:auto;   /* Height of the footer */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
