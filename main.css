@@ -22,17 +22,12 @@ html, body {
   padding:5px;
 }
 
-form {
-
-  border-radius: 8px;
-}
-
 #body {
-  padding:10px;
+  padding:0px;
   padding-bottom:60px;   /* Height of the footer */
   color: white;
   text-align: center;
-  font-size: 200%;
+  font-size: 190%;
 }
 
 #footer {

@@ -6,6 +6,7 @@
       Guessing Game
     </title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="jquery-1.12.2.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   
@@ -14,22 +15,22 @@
     <div id="container">   
       <div id="header">
         <h1>Guessing Game</h1>
-        <h3>Joao Paulo Ramia</h4>
+        <h3>Joao Paulo Ramia</h3>
       </div>
     
       <div id="body">
-        <h2>PICK A NUMBER BETWEEN 0 AND 100:</h2>
+        <h2 id="firstLine">PICK A NUMBER BETWEEN 0 AND 100:</h2>
         
-        <form onSubmit="check(); hotOrCold(); return false;">
-          <input type="text" name="nm" placeholder="Choose 0...100" id="userGuess">
-          <input type="button" value="Submit number" onClick="check(); hotOrCold();">
-          <br>
-          <br>
-          <input type="button" value="Give me a hint!" onClick="hint();">
-        </form>       
-        <h3 id="hotOrCold"> </h3>
+        <input id="userGuess" type="text" name="nm" placeholder="Choose 0...100">
+          
+        <input type="button" id="submitButton" value="Submit number">
+        <br>
+        <br>
+        <input type="button" id="giveHint" value="Give me a hint!">
+               
         <h4 id="result">Try it!</h4>
-      
+        <h5 id="countDown">You still have <span id="count">5</span><span id="tries"> tries</span>. <span id="guessed"></span></h5>
+      <input type="button" id="playAgain" value="PLAY AGAIN">
       </div>
       
       <div id="footer">
